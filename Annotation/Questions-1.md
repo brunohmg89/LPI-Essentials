@@ -94,17 +94,17 @@
 
 7. Qual das seguintes saídas vem do comando free?
 
-:black_large_square: 
+:black_large_square:<br>
 ![A](img/image.png)
 
-:black_large_square: 
+:black_large_square:<br>
 ![B](img/image-1.png)
 
-:black_large_square: 
+:black_large_square:<br>
 ![C](img/image-2.png)
 
-:black_large_square: 
+:black_large_square:<br>
 ![D](img/image-3.png)
 
-:white_check_mark: 
+:white_check_mark:<br>
 ![E](img/image-4.png)
