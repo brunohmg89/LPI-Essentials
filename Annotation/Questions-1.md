@@ -95,16 +95,16 @@
 7. Qual das seguintes saídas vem do comando free?
 
 :black_large_square: 
-![A](image.png)
+![A](img/image.png)
 
 :black_large_square: 
-![B](image-1.png)
+![B](img/image-1.png)
 
 :black_large_square: 
-![C](image-2.png)
+![C](img/image-2.png)
 
 :black_large_square: 
-![D](image-3.png)
+![D](img/image-3.png)
 
 :white_check_mark: 
-![E](image-4.png)
+![E](img/image-4.png)
