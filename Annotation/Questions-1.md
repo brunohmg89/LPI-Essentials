@@ -271,9 +271,12 @@
 
 :white_check_mark: Além de conter o kernel Linux e programas GNU, uma distribuição Linux normalmente agrega outros recursos para tornar sua utilização mais simples.
 
-:white_check_mark: É uma versão do Linux que roda apenas em um determinado tipo de plataforma.
+:black_large_square: É uma versão do Linux que roda apenas em um determinado tipo de plataforma.
 
-:black_large_square: Além de oferecerem um conjunto completo de aplicativos prontos para uso, as distribuições mais populares podem atualizar e instalar novos programas automaticamente.
+:white_check_mark: Além de oferecerem um conjunto completo de aplicativos prontos para uso, as distribuições mais populares podem atualizar e instalar novos programas automaticamente.
+
+> _Além de conter o kernel Linux e programas GNU, uma distribuição Linux normalmente agrega outros recursos para tornar sua utilização mais simples. Além de oferecerem um conjunto completo de aplicativos prontos para uso, as distribuições mais populares podem atualizar e instalar novos programas automaticamente. Esse recurso é chamado gestão de pacotes. O gestor de pacotes da distribuição elimina o risco de instalar um programa incompatível ou mal intencionado._
+_Outra vantagem da distribuições é seu custo. Um usuário experiente pode copiar e instalar legalmente a distribuição sem precisar pagar por isso. Existem distribuições pagas, mas que pouco diferem daquelas sem custo no que diz respeito a facilidade e recursos._
 
 ---
 
@@ -359,9 +362,9 @@
 
 :black_large_square: /etc/host.conf  /etc/hostname  /etc/hosts  /etc/hosts.allow  /etc/hosts.deny
 
-:white_check_mark: ls: não é possível acessar '/etc/host': Arquivo ou diretório não encontrado
+:black_large_square: ls: não é possível acessar '/etc/host': Arquivo ou diretório não encontrado
 
-:black_large_square: /etc/hosts
+:white_check_mark: /etc/hosts
 
 :black_large_square: -rw-r--r-- 1 root root 419 Jan 21 20:15 /etc/hosts
 
@@ -383,18 +386,17 @@
 
 27. Podemos dizer, sobre caminhos relativos para pastas (diretórios) que:
 
-:black_large_square: /root é a pasta raiz do sistema, . é a pasta onde estamos, ... representa duas pastas superiores à que estamos e /home é a pasta correspondente ao usuário acessando o sistema nesse 
-momento
+:black_large_square: `/root` é a pasta raiz do sistema, `.` é a pasta onde estamos, `...` representa duas pastas superiores à que estamos e `/home` é a pasta correspondente ao usuário acessando o sistema nesse momento
 
-:black_large_square: /root é a pasta do super usuário, .. é a pasta onde estamos, ... representa a pasta /etc e /home/user é a pasta correspondente ao usuário acessando o sistema nesse momento
+:black_large_square: `/root` é a pasta do super usuário, `..` é a pasta onde estamos, `...` representa a pasta `/etc` e `/home/user` é a pasta correspondente ao usuário acessando o sistema nesse momento
 
-:black_large_square: / é a pasta raiz, . é a pasta onde estamos, .. é a pasta imediatamente superior à que estamos e ~ é a pasta correspondente ao usuário acessando o sistema nesse momento
+:white_check_mark: `/` é a pasta raiz, `.` é a pasta onde estamos, `..` é a pasta imediatamente superior à que estamos e `~` é a pasta correspondente ao usuário acessando o sistema nesse momento
 
-:black_large_square: * é a pasta raiz do sistema, ? é a pasta onde estamos nesse momento, /home é a pasta do usuário padrão
+:black_large_square: `*` é a pasta raiz do sistema, `?` é a pasta onde estamos nesse momento, `/home` é a pasta do usuário padrão
 
-Todas as alternativas estão corretas
+:black_large_square: Todas as alternativas estão corretas
 
-:white_check_mark: Nenhuma alternativa está correta
+:black_large_square: Nenhuma alternativa está correta
 
 ---
 
@@ -472,9 +474,9 @@ Todas as alternativas estão corretas
 
 33. Das seguintes opções de comandos, qual a que irá compactar a pasta /home solicitando uma senha necessária para a sua descompactação?
 
-:white_check_mark: tar cpf homes.tar /home
+:black_large_square: tar cpf homes.tar /home
 
-:black_large_square: zip -e -r homes.zip /home
+:white_check_mark: zip -e -r homes.zip /home
 
 :black_large_square: bzip2 -e -R homes.bz2 /home
 
@@ -542,17 +544,17 @@ Todas as alternativas estão corretas
 
 38. Quais as três afirmativas verdadeiras sobre o comando paste?
 
-:black_large_square: Ele concatena linhas de arquivos, na forma de colunas (uma linha de cada arquivo ao lado da outra, em sequencia), caso não seja usada nenhuma chave.
+:white_check_mark: Ele concatena linhas de arquivos, na forma de colunas (uma linha de cada arquivo ao lado da outra, em sequencia), caso não seja usada nenhuma chave.
 
 :white_check_mark: Com a opção -s, o paste colocará as linhas dos arquivos uma abaixo da outra, em vez de ao lado.
 
-:white_check_mark: O comando paste desfaz o que o comando cut fez.
+:black_large_square: O comando paste desfaz o que o comando cut fez.
 
 :white_check_mark: O comando paste, usado com apenas um arquivo, funciona como o comando cat.
 
 :black_large_square: O comando paste pode ser usado apenas dentro de scripts, nunca na linha de comando.
 
-> _comando `paste`
+> _O comando ``paste`` no Linux (colar) é utilizado para concatenar as linhas de diversos arquivos em colunas verticais._
 
 ---
 
@@ -580,7 +582,8 @@ Todas as alternativas estão corretas
 
 :black_large_square: 0, pois ? é sempre uma variável de conteúdo nulo
 
-> váriavel ?
+> _A variável `?` representa o status de saída do comando anterior._
+_Convencionou-se que quando um comando é executado sem erros, ele retornará o código de retorno 0 (zero). Quando há um erro, um valor maior que 1 será retornado, e dependendo do valor, o desenvolvedor do comando poderá fornecer uma lista de códigos de erro e seus significados._
 
 ---
 
@@ -631,15 +634,17 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 44. O que você pode dizer que são desvantagens do Linux (assinale duas respostas corretas)?
 
-:white_check_mark: Ainda que o Linux possa ser a opção ideal para servidores, ele jamais será a opção para dispositivos móveis.
+:black_large_square: Ainda que o Linux possa ser a opção ideal para servidores, ele jamais será a opção para dispositivos móveis.
 
-:black_large_square: inda há falta de padronização. Existem diferenças significativas entre as distribuições. A execução de uma tarefa em uma distribuição não será necessariamente igual em outra distribuição.
+:white_check_mark: Ainda há falta de padronização. Existem diferenças significativas entre as distribuições. A execução de uma tarefa em uma distribuição não será necessariamente igual em outra distribuição.
 
-:white_check_mark: O código aberto do Linux o torna muito mais propenso a ataques por crackers.
+:black_large_square: O código aberto do Linux o torna muito mais propenso a ataques por crackers.
 
 :black_large_square: O código aberto do Linux impede que ele seja usado em aplicações de missão crítica.
 
-:black_large_square: Suporte. Alguns fabricantes de dispositivos e programas não fornecem suporte para Linux, obrigando o usuário a manter um Windows ou OS X exclusivamente para esses casos.
+:white_check_mark: Suporte. Alguns fabricantes de dispositivos e programas não fornecem suporte para Linux, obrigando o usuário a manter um Windows ou OS X exclusivamente para esses casos.
+
+> _Quem é fã de jogos sabe que os fornecedores de jogos e placas de vídeo e joysticks ainda se preocupam mais com o Windows do que com o Linux. Essa constatação deve ajudá-lo a responder corretamente a essa questão em uma nova tentativa._
 
 ---
 
@@ -669,4 +674,150 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 ---
 
-47. 
+47. Qual dos seguintes comandos monitora continuamente os processos em execução em seu sistema Linux, mostrando informações sobre uso de memória e CPU de cada processo?
+
+:black_large_square: mem
+
+:black_large_square: procinfo
+
+:black_large_square: ps
+
+:white_check_mark: top
+
+:black_large_square: fs
+
+---
+
+48. Em sistemas Linux, como se chama o padrão que define a localização dos arquivos e diretórios?
+
+:black_large_square: LSB - Linux Standard Base
+
+:black_large_square: POSIX - Portable Operating System Interface
+
+:white_check_mark: FHS - Filesystem Hierarchy Standard
+
+:black_large_square: SMB - Server Message Block
+
+:black_large_square: CIFS - Common Internet File System
+
+---
+
+49. Em qual diretório encontramos os arquivos que contêm as configurações do ambiente Linux?
+
+:white_check_mark: /etc
+
+:black_large_square: /dev
+
+:black_large_square: /config
+
+:black_large_square: /usr/params
+
+:black_large_square: /root/params
+
+---
+
+50. Qual é o comando que permite saber com quais outras máquinas a sua máquina está conectada, nesse momento?
+
+:black_large_square: ifconfig
+
+:black_large_square: route
+
+:black_large_square: connect
+
+:black_large_square: netconfig
+
+:white_check_mark: netstat
+
+> _O Comando `ifconfig` no Linux cria e configura as interfaces de rede e seus parâmetros. Esta operação é geralmente feita durante o processo de carga do sistema. Se não for passado nenhum parâmetro, ele exibe as configurações das interfaces ativas._
+> _O Comando `route` no Linux manipula a tabela de roteamento IP do kernel. Seu principal uso é configurar rotas estáticas para hosts ou redes especificadas através de uma interface, após a mesma ter sido configurada com o programa `ip`._
+_Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
+> _O Comando `netstat` no Linux faz parte do antigo pacote legado Net-Tools e exibe as conexões de rede, tabela de rotas, estatísticas das interfaces etc. Ele foi elegantemente substituído pelo comando `ss`._
+
+---
+
+51. Desconfio que meu servidor não está resolvendo nomes de internet corretamente. Qual é a mais rápida opção que tenho para resolver o problema?
+
+:black_large_square: Desligo meu servidor e rezo para o deus da internet.
+
+:black_large_square: Ligo para o provedor de acesso à Internet e peço ajuda aos universitários.
+
+:white_check_mark: Verifico com um ping se o servidor DNS do Google (8.8.8.8) está ativo e configuro esse endereço em meu arquivo /etc/resolv.conf
+
+:black_large_square: Isso é impossível de acontecer pois máquinas Linux nunca estão desconectadas da internet.
+
+---
+
+52. Quando estou acessando um sistema Linux, através de um terminal, qual comando permite que eu saiba a quais grupos pertenço?
+
+:black_large_square: group
+
+:white_check_mark: groups
+
+:black_large_square: id
+
+:black_large_square: ids
+
+:black_large_square: mygroups
+
+> _O comando `groups` exibe os nomes dos grupos aos quais um usuário pertence._
+
+---
+
+53. Sou admistrador de um sistema Linux e quero saber quais os usuários que acessaram o sistema mais recentemente. Qual o comando que devo usar, dentre as opções disponíveis a seguir?
+
+:black_large_square: updatedb
+
+:white_check_mark: lastlog
+
+:black_large_square: who -lastlog
+
+:black_large_square: whois
+
+:black_large_square: recentuser
+
+> _O comando `updatedb` atualiza banco de dados de nome de arquivos acessado com o comando `locate`._
+> _O comando `lastlog` exibe informações referentes ao último login dos usuários. Caso nenhum argumento seja passado, o comando `lastlog` exibe todas as informações armazenadas no arquivo `/var/log/lastlog` de todos os usuários do sistema._
+> _Em sistemas operacionais do tipo Unix, o comando `who` exibe usuários conectados ao sistema, porém a opção `-lastlog` não existe_
+> _O comando `whois` procura um objeto em um banco de dados WHOIS. O WHOIS é um protocolo de consulta e resposta amplamente usado para consultar bancos de dados que armazenam os usuários registrados de um recurso da Internet._
+
+---
+
+54. O comando useradd é usado pelo usuário root para criar uma nova conta no sistema. Quais são as chaves corretas para esse comando? Duas respostas são corretas.
+
+:black_large_square: -c segurança: especifica quais pastas o usuário pode acessar com privilégios de usuário root
+
+:white_check_mark: -c comentário: comentário (geralmente o nome completo do usuário)
+
+:white_check_mark: -s shell: Shell padrão para o usuário
+
+:black_large_square: -s segurança: especifica quais pastas o usuário pode acessar com privilégios de usuário root
+
+:black_large_square: -i interativo: cria o novo usuário de forma interativa, fazendo perguntas para preencher os dados sobre o mesmo
+
+---
+
+55. O que significa o "x" no segundo campo do arquivo /etc/passwd (root:x:0:0::/root:/bin/bash)?
+
+:black_large_square: O usuário tem direito a execução de qualquer programa disponível no sistema.
+
+:black_large_square: O usuário tem, automaticamente, execução de programas em qualquer arquivo que criou.
+
+:black_large_square: O usuário tem as mesmas permissões do usuário root.
+
+:white_check_mark: Sua senha está criptografada no arquivo /etc/shadow
+
+:black_large_square: O usuário não tem direito de acessar o sistema.
+
+---
+
+56. O que você tem a dizer sobre: chmod 777
+
+:black_large_square: Isso é pior que 666 e prometo nunca usar permissões assim quando administrar um sistema Linux
+
+:black_large_square: Quem executa esse comando não tem amor por nada, nem por sua família!
+
+:black_large_square: É o comando que abre todos os buracos! Todos mesmo! Até os meus!
+
+:black_large_square: Não há coisa pior que isso no mundo de TI!
+
+:white_check_mark: Todas as alternativas anteriores e mais muitas!
