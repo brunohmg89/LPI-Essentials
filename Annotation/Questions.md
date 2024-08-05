@@ -892,7 +892,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :black_large_square: Ubuntu Vanilla
 
-> LTS
+> _LTS é uma sigla para Long-term Support, ou suporte a longo prazo. Isso significa que o lançamento LTS de uma distro receberá suporte de seus criadores por bastante tempo. A distro com lançamentos LTS mais famosa, é o Ubuntu, com uma nova edição do tipo a cada 2 anos._
 
 ---
 
@@ -908,7 +908,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :white_check_mark: touch
 
-> comando touch
+> _Se o arquivo não existir, o comando `touch` cria um arquivo vazio_
 
 ---
 
@@ -934,7 +934,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :black_large_square: dnsup
 
-> O comando `route` mostra informações da tabela de roteamento.
+> _O comando `route` mostra informações da tabela de roteamento._
 
 ---
 
@@ -1050,7 +1050,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :white_check_mark: id
 
-> Comando id
+> _O comando `id` Este comando informa o UID, o GID e os grupos de um determinado usuário._
 
 ---
 
