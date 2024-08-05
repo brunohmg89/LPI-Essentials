@@ -92,7 +92,7 @@
 
 ---
 
-7. Qual das seguintes saídas vem do comando free?
+7. Qual das seguintes saídas vem do comando `free`?
 
 :black_large_square:<br>
 ![A](img/image.png)
@@ -111,7 +111,7 @@
 
 ---
 
-8. O que é verdade sobre o comando dmesg? (Escolha duas)
+8. O que é verdade sobre o comando `dmesg`? (Escolha duas)
 
 :black_large_square: Ele rastreia a execução de um comando e mostra cada etapa que o programa realiza.
 
@@ -125,7 +125,7 @@
 
 ---
 
-9. Qual das seguintes saídas pode resultar do comando last?
+9. Qual das seguintes saídas pode resultar do comando `last`?
 
 :black_large_square: 1 ls 2 cat text.txt 3 logout
 
@@ -155,7 +155,7 @@
 
 ---
 
-11. Quais permissões são definidas em um arquivo regular depois que as permissões foram modificadas com o comando chmod 654 file.txt?
+11. Quais permissões são definidas em um arquivo regular depois que as permissões foram modificadas com o comando `chmod 654 file.txt`?
 
 :black_large_square: drw-r-xr--
 
@@ -188,7 +188,7 @@
 
 ---
 
-13. Quais das seguintes permissões estão definidas no diretório /tmp/?
+13. Quais das seguintes permissões estão definidas no diretório `/tmp/`?
 
 :white_check_mark: rwxrwxrwt
 
@@ -221,7 +221,7 @@
 
 ---
 
-15. Quais informações são armazenadas em /etc/passwd? (Escolha três)
+15. Quais informações são armazenadas em `/etc/passwd`? (Escolha três)
 
 :black_large_square: O limite de espaço de armazenamento do usuário
 
@@ -235,7 +235,7 @@
 
 ---
 
-16. Qual das seguintes opções tar lida com a compactação? (Escolha duas.)
+16. Qual das seguintes opções `tar` lida com a compactação? (Escolha duas)
 
 :black_large_square: -bz
 
@@ -246,6 +246,9 @@
 :white_check_mark: -j
 
 :black_large_square: -z2
+
+> _A opção `-z` utiliza o programa `gzip` durante o processamento dos arquivos._
+> _A opção `-j` utiliza o programa `bzip2` para processar os arquivos do tar_
 
 ---
 
@@ -265,7 +268,7 @@
 
 ---
 
-18. O que é uma distribuição Linux? (assinale duas respostas corretas)
+18. O que é uma distribuição Linux? (Escolha duas)
 
 :black_large_square: É uma versão do Linux vendida por empresas e por isso, seu código não é aberto.
 
@@ -328,7 +331,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-23. Podemos dizer, sobre a virtualização, que: (assinale duas respostas corretas)
+23. Podemos dizer, sobre a virtualização, que: (Escolha duas)
 
 :white_check_mark: ela é a capacidade de executar simultaneamente mais de um sistema operacional num mesmo computador.
 
@@ -342,7 +345,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-24. Quando você digita, na linha de comando do Linux (bash) o seguinte comando: echo -e "Linux&nEssentials", qual é o resultado?
+24. Quando você digita, na linha de comando do Linux (bash) o seguinte comando `echo -e "Linux&nEssentials"`, qual é o resultado?
 
 :black_large_square: "Linux&nEssentials"
 
@@ -356,9 +359,12 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 :black_large_square: O resultado é uma mensagem de erro
 
+> _O comando `echo` mostra texto na saída padrão seguido por uma nova linha._
+_A opção `-e` habilita interpretação dos códigos de escape após barra invetida, porém no comando acima não possui `\` e o resultado será o mesmo que está no comando._
+
 ---
 
-25. Qual é o possível resultado do comando: ls /etc/host?
+25. Qual é o possível resultado do comando `ls /etc/host`?
 
 :black_large_square: /etc/host.conf  /etc/hostname  /etc/hosts  /etc/hosts.allow  /etc/hosts.deny
 
@@ -374,11 +380,11 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 26. Como você pode obter mais informações sobre os comandos e programas que podem ser executados a partir do bash?
 
-:black_large_square: Posso usar [comando --help] (digitando no terminal o que está entre as chaves) para obter uma ajuda rápida sobre as opções do [comando]
+:black_large_square: Posso usar a opção `--help` para obter uma ajuda rápida sobre as opções do comando
 
-:black_large_square: [man comando], (digitando no terminal o que está entre as chaves) para obter o manual do [comando]
+:black_large_square: `man comando` para obter o manual do comando
 
-:black_large_square: [info comando], (digitando no terminal o que está entre as chaves) para ler um tutorial sobre o uso do [comando]
+:black_large_square: `info comando` para ler um tutorial sobre o uso do comando
 
 :white_check_mark: Todas as alternativas anteriores estão corretas.
 
@@ -400,7 +406,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-28. Qual o resultado possível para esse comando: find /usr/local/bin/ -name search
+28. Qual o resultado possível para esse comando `find /usr/local/bin/ -name search`
 
 :black_large_square: Google
 
@@ -414,19 +420,19 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-29. O comando cp é utilizado para copiar arquivos. Suas opções principais são (assinale três respostas corretas):
+29. O comando `cp` é utilizado para copiar arquivos. Suas opções principais são (Escolha três):
 
-:white_check_mark: -r: Copia recursivamente o conteúdo do diretório de origem.
+:white_check_mark: `-r` Copia recursivamente o conteúdo do diretório de origem.
 
-:black_large_square:-H: Não copia nada, apenas mostra uma ajuda para o comando.
+:black_large_square: `-H` não copia nada, apenas mostra uma ajuda para o comando.
 
-:white_check_mark: -p: Copia também os atributos do arquivo original.
+:white_check_mark: `-p` copia também os atributos do arquivo original.
 
-:black_large_square:-T: Copia os arquivos preservando os atributos de tempo de criação.
+:black_large_square: `-T` copia os arquivos preservando os atributos de tempo de criação.
 
-:white_check_mark: -i: Modo interativo. Pergunta antes de sobrescrever um arquivo.
+:white_check_mark: `-i` modo interativo. Pergunta antes de sobrescrever um arquivo.
 
-:black_large_square: -X: copia os arquivos removendo os atributos de execução.
+:black_large_square: `-X` copia os arquivos removendo os atributos de execução.
 
 ---
 
@@ -458,7 +464,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-32.  É correto dizer sobre o comando: tar cvf etc.tar /etc (assinale duas alternativas corretas)
+32.  É correto dizer sobre o comando `tar cvf etc.tar /etc` (Escolha duas)
 
 :black_large_square: em "cvf", a chave "v" instrui o comando tar a verificar a chave MD5 de cada arquivo que está sendo extraído.
 
@@ -472,7 +478,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-33. Das seguintes opções de comandos, qual a que irá compactar a pasta /home solicitando uma senha necessária para a sua descompactação?
+33. Das seguintes opções de comandos, qual a que irá compactar a pasta `/home` solicitando uma senha necessária para a sua descompactação?
 
 :black_large_square: tar cpf homes.tar /home
 
@@ -486,7 +492,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-34. Qual a sintaxe correta do comando find para que eu possa encontrar links simbólicos dentro da pasta /home/user?
+34. Qual a sintaxe correta do comando find para que eu possa encontrar links simbólicos dentro da pasta `/home/user`?
 
 :black_large_square: find -type l /home/user
 
@@ -498,9 +504,19 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 :black_large_square: find -symlink /home/user
 
+> _O comando `find` pesquisa arquivos em uma hierarquia de diretórios._
+>   - _`-type tipo` procura arquivos de um determinado tipo. São tipos possíveis:_
+>       - _`b` blocos especiais (buffer)_
+>       - _`c` caracteres especiais_
+>       - _`d` diretórios_
+>       - _`p` conector definido (FIFO)_
+>       - _`f` arquivo regular_
+>       - _`l` ligação simbólica_
+>       - _`s` socket_
+
 ---
 
-35. Qual das opções a seguir me permite saber o caminho completo, permissões e tamanho de cada arquivo criado há menos de 24 horas na pasta /home/user?
+35. Qual das opções a seguir me permite saber o caminho completo, permissões e tamanho de cada arquivo criado há menos de 24 horas na pasta `/home/user`?
 
 :black_large_square: ls -lt <24h /home/user
 
@@ -528,7 +544,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-37. Uma linha do arquivo /etc/passwd é a seguinte: "games:x:5:60:games:/usr/games:/usr/sbin/nologin". Como posso extrair, desse arquivo, apenas as informações relativas ao nome do usuário e sua pasta de trabalho?
+37. Uma linha do arquivo `/etc/passwd` é a seguinte `games:x:5:60:games:/usr/games:/usr/sbin/nologin`. Como posso extrair, desse arquivo, apenas as informações relativas ao nome do usuário e sua pasta de trabalho?
 
 :white_check_mark: cut -d ":" -f 1,6 /etc/passwd
 
@@ -542,7 +558,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-38. Quais as três afirmativas verdadeiras sobre o comando paste?
+38. Quais as três afirmativas verdadeiras sobre o comando `paste`?
 
 :white_check_mark: Ele concatena linhas de arquivos, na forma de colunas (uma linha de cada arquivo ao lado da outra, em sequencia), caso não seja usada nenhuma chave.
 
@@ -558,7 +574,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-39. Para que serve a primeira linha de um script, iniciada pelos caracteres #!
+39. Para que serve a primeira linha de um script, iniciada pelos caracteres `#!`
 
 :black_large_square: É um comentário dizendo para que servirá o script.
 
@@ -570,7 +586,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 ---
 
-40. Qual é o resultado do comando: echo $?
+40. Qual é o resultado do comando `echo $`?
 
 :black_large_square: não é possível executar 'echo $?'
 
@@ -589,7 +605,7 @@ _Convencionou-se que quando um comando é executado sem erros, ele retornará o 
 
 41. Considere a imagem abaixo, representando um script em shell. Qual será o resultado de sua execução?
 
-![question-41](image-5.png)
+![question-41](img/image-5.png)
 
 :black_large_square: 1|2|3|4|5
 
@@ -632,7 +648,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 ---
 
-44. O que você pode dizer que são desvantagens do Linux (assinale duas respostas corretas)?
+44. O que você pode dizer que são desvantagens do Linux (Escolha duas)?
 
 :black_large_square: Ainda que o Linux possa ser a opção ideal para servidores, ele jamais será a opção para dispositivos móveis.
 
@@ -775,14 +791,14 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :black_large_square: recentuser
 
-> _O comando `updatedb` atualiza banco de dados de nome de arquivos acessado com o comando `locate`._
-> _O comando `lastlog` exibe informações referentes ao último login dos usuários. Caso nenhum argumento seja passado, o comando `lastlog` exibe todas as informações armazenadas no arquivo `/var/log/lastlog` de todos os usuários do sistema._
-> _Em sistemas operacionais do tipo Unix, o comando `who` exibe usuários conectados ao sistema, porém a opção `-lastlog` não existe_
+> _O comando `updatedb` atualiza banco de dados de nome de arquivos acessado com o comando `locate`._<br>
+> _O comando `lastlog` exibe informações referentes ao último login dos usuários. Caso nenhum argumento seja passado, o comando `lastlog` exibe todas as informações armazenadas no arquivo `/var/log/lastlog` de todos os usuários do sistema._<br>
+> _Em sistemas operacionais do tipo Unix, o comando `who` exibe usuários conectados ao sistema, porém a opção `-lastlog` não existe_<br>
 > _O comando `whois` procura um objeto em um banco de dados WHOIS. O WHOIS é um protocolo de consulta e resposta amplamente usado para consultar bancos de dados que armazenam os usuários registrados de um recurso da Internet._
 
 ---
 
-54. O comando useradd é usado pelo usuário root para criar uma nova conta no sistema. Quais são as chaves corretas para esse comando? Duas respostas são corretas.
+54. O comando `useradd` é usado pelo usuário root para criar uma nova conta no sistema. Quais são as chaves corretas para esse comando? (Escolha duas)
 
 :black_large_square: -c segurança: especifica quais pastas o usuário pode acessar com privilégios de usuário root
 
@@ -796,7 +812,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 ---
 
-55. O que significa o "x" no segundo campo do arquivo /etc/passwd (root:x:0:0::/root:/bin/bash)?
+55. O que significa o `x` no segundo campo do arquivo `/etc/passwd` (`root:x:0:0::/root:/bin/bash`)?
 
 :black_large_square: O usuário tem direito a execução de qualquer programa disponível no sistema.
 
@@ -810,7 +826,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 ---
 
-56. O que você tem a dizer sobre: chmod 777
+56. O que você tem a dizer sobre `chmod 777`
 
 :black_large_square: Isso é pior que 666 e prometo nunca usar permissões assim quando administrar um sistema Linux
 
