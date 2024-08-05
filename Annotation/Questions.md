@@ -837,3 +837,271 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 :black_large_square: Não há coisa pior que isso no mundo de TI!
 
 :white_check_mark: Todas as alternativas anteriores e mais muitas!
+
+---
+
+**Reference:** <https://docs.google.com/forms/d/e/1FAIpQLScyRdNpPT1RWAsMWSzuFPwUYLxYnY5dLtRVd43TI7WQLgWw0Q/viewform>
+
+## Questions
+
+57. Quais afirmações estão corretas em relação às distribuições? (Escolha dois)
+
+:white_check_mark: Os programas podem ser instalados manualmente sem precisar de gerenciador de pacotes
+ 
+:black_large_square: Para criar uma nova distribuição é necessária uma licença linux internacional
+
+:black_large_square: As distribuições restrigem o usuário aos pacotes de programas suportados
+
+:white_check_mark: Pacotes de programas de uma distribuição podem ser adaptados para outra
+ 
+:black_large_square: Apenas distribuições comerciais oferecem atualizações de segurança regulares.
+
+---
+
+58. Quais dos seguintes aplicativos são sistemas de banco de dados relacionais de código aberto populares? (Escolha dois)
+
+:white_check_mark: Mysql
+ 
+:black_large_square: Banco2D
+
+:black_large_square: MongoDB
+
+:white_check_mark: PostgreSQL
+
+---
+
+59. Qual destes caracteres é um comentário em Shell?
+
+:black_large_square: *
+
+:black_large_square: ;
+
+:white_check_mark: #
+ 
+:black_large_square: /
+
+---
+
+60. Qual das seguintes versões do Ubuntu é considerada mais estável e adequada para uso para fins comerciais?
+
+:white_check_mark: LTS
+ 
+:black_large_square: Kubuntu
+
+:black_large_square: Xubuntu
+
+:black_large_square: Ubuntu Vanilla
+
+> LTS
+
+---
+
+61. Qual comando é utilizado para criar um arquivo comum?
+
+:black_large_square: create
+
+:black_large_square: make
+
+:black_large_square: build
+
+:black_large_square: chmod
+
+:white_check_mark: touch
+
+> comando touch
+
+---
+
+62. Quais são os três conjuntos de permissões para um arquivo?
+
+:white_check_mark: Dono do arquivo, Grupo do arquivo e Outros
+ 
+:black_large_square: Usuario, grupo, e usuário padrão
+
+:black_large_square: Root, grupo e outros
+
+:black_large_square: Usuário administrador, root e outros
+
+---
+
+63. Um computador Linux não tem acesso à Internet. Qual comando exibe informações sobre o gateway de rede do sistema?
+
+:black_large_square: traceroute
+
+:black_large_square: ipconfig
+ 
+:white_check_mark: route
+
+:black_large_square: dnsup
+
+> O comando `route` mostra informações da tabela de roteamento.
+
+---
+
+64. Qual destes sistemas de arquivos é comulmente utilizado no linux?
+
+:black_large_square: ntfs
+
+:black_large_square: fat32
+
+:white_check_mark: ext4
+ 
+:black_large_square: hpf+
+
+---
+
+65. Quais dos seguintes serviços são usados para sistemas de arquivos de rede? (Escolha duas)
+
+:white_check_mark: NFS
+ 
+:black_large_square: RFS
+
+:black_large_square: NTFS
+ 
+:white_check_mark: SAMBA
+
+> _NFS é usado para compartilhamento de arquivos entre máquinas Linux. SAMBA é usado para compartilhamento de arquivos em ambientes mistos (Windows e Linux)._
+
+---
+
+66. Qual das seguintes propriedades de uma conta de usuário determina se o usuário recebe privilégios de administrador?
+
+:black_large_square: Seu ID de grupo primário deve ser 0 (zero)
+ 
+:black_large_square: Ele deve ser o primeiro em /etc/passwd
+
+:white_check_mark: Seu ID de usuário é 0 (zero)
+
+:black_large_square: Seu nome de usuário é root
+
+---
+
+67. Quais dos seguintes serviçoes são usados para sistemas de arquivos de rede? (Escolha dois)
+
+:white_check_mark: NFS
+ 
+:black_large_square: rombox
+
+:black_large_square: openldap
+
+:black_large_square: python
+
+:white_check_mark: samba
+
+---
+
+68. Qual comando pesquisa e lista arquivos PDF no diretório do usuário?
+
+:black_large_square: search *.pdf
+
+:black_large_square: find ~ -name '*.pdf'
+ 
+:white_check_mark: find /home/*.pdf
+
+:black_large_square: ls -name -R `*.pdf`
+
+---
+
+69. Qual comando é usado para extrair arquivo.bz2?
+
+:black_large_square: uncompress download.bz2
+
+:black_large_square: unpack download.bz2
+
+:black_large_square: unzip download.bz2
+ 
+:white_check_mark: bunzip2 download.bz2
+
+> _Para extrair um .bz2 sempre usamos o bunzip2. Se estivesse com .tar.bz2 seria o "tar xjf"._
+
+---
+
+70. Qual das afirmações a seguir é verdadeira para uma distribuição Linux usada em um ambiente corporativo?
+
+:white_check_mark: Essas distribuições contêm versões de software que provaram ser estáveis, mesmo que não seja a versão recente, a fim de minimizar os problemas.
+ 
+:black_large_square: Essas distribuições contem software proprietário
+
+:black_large_square: Essas distribuições contém sempre a versão mais recente dos softwares
+
+:black_large_square: Essas distribuições são apenas acessiveis para grandes empresas
+
+---
+
+71. Qual diretório possui os logs do sistema?
+
+:white_check_mark: /var
+ 
+:black_large_square: /tmp
+
+:black_large_square: /dev
+
+:black_large_square: /usr
+
+---
+
+72. Qual comando informa a lista de grupos que pertencem ao usuário?
+
+:black_large_square: whoami
+
+:black_large_square: lsgroup
+
+:black_large_square: who
+
+:white_check_mark: id
+
+> Comando id
+
+---
+
+73. Quais arquivos afetarão o sistema de resolução de nomes de domínio no Linux? (Escolha dois)
+
+:white_check_mark: /etc/resolv.conf
+ 
+:black_large_square: /etc/hosts
+
+:black_large_square: /etc/nome_host
+
+:black_large_square: /etc/dnsconfig
+
+:black_large_square: /etc/samba.conf
+
+---
+
+74. Qual cadeia de comando contará o número de arquivos regulares com o nome foo.txt em /home?
+
+:white_check_mark: find /home -type f -name foot.txt | wc -l
+ 
+:black_large_square: ls -lr /home | grep foo.txt
+
+:black_large_square: grep -R foot.txt | ls -l /home
+
+:black_large_square: ls -l /home | grep foo.txt
+
+---
+
+75. Qual caractere no shell é usado para dividir um comando em várias linhas?
+
+:black_large_square: ~
+
+:black_large_square: "
+
+:black_large_square: /
+
+:white_check_mark: \
+ 
+:black_large_square: !
+
+---
+
+76. Quais critérios são úteis ao decidir qual sistema operacional usar? (Escolha três)
+
+:white_check_mark: Disponibilidade de aplicativos e ferramentas obrigatórios.
+ 
+:black_large_square: Ambiente de Desktop gráfico
+
+:black_large_square: Preferencias ideológicas do administrador
+
+:white_check_mark: Habilidade dos administradores e funcionários
+ 
+:white_check_mark: custos e licenças
