@@ -257,8 +257,8 @@ _A permissão especial `t`, pode ser especificada somente no campo outros usuár
 
 :black_large_square: -z2
 
-> _A opção `-z` utiliza o programa `gzip` durante o processamento dos arquivos._
-> _A opção `-j` utiliza o programa `bzip2` para processar os arquivos do tar_
+> _A opção `-z` utiliza o programa `gzip` durante o processamento dos arquivos._<br>
+_A opção `-j` utiliza o programa `bzip2` para processar os arquivos do tar_
 
 ---
 
@@ -369,7 +369,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 :black_large_square: O resultado é uma mensagem de erro
 
-> _O comando `echo` mostra texto na saída padrão seguido por uma nova linha._
+> _O comando `echo` mostra texto na saída padrão seguido por uma nova linha._<br>
 _A opção `-e` habilita interpretação dos códigos de escape após barra invetida, porém no comando acima não possui `\` e o resultado será o mesmo que está no comando._
 
 ---
@@ -385,6 +385,9 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 :black_large_square: -rw-r--r-- 1 root root 419 Jan 21 20:15 /etc/hosts
 
 :black_large_square: /etc/hosts: ASCII text
+
+> _Tomar cuidado com essa pergunta e resposta, quando realizado esse comando teclando `enter` no final o resultado será a opção "2" informando que "o arquivo ou diretório não foi encontrado" devido o arquivo `/etc/host` não existir_.<br>
+_Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que existe no sistema que é `/etc/hosts` e se clicar `enter` ai sim o resultado será a resposta "3"_
 
 ---
 
@@ -444,13 +447,14 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 :black_large_square: `-X` copia os arquivos removendo os atributos de execução.
 
-> _`-d` Preserva os links ao copiar os arquivos_
-> _`-p` Preserva todas as informações dos atributos dos arquivos, como dono do arquivo, grupo, permissões e data_
-> _`-R` Copia os arquivos recursivamente. Útil para copiar os arquivos e diretórios abaixo do diretório especificado_
-> _`-a` Faz o mesmo que as opções “-dpR” combinadas_
-> _`-f` Força a cópia gravando por cima do destino_
-> _`-i` Pergunta ao usuário antes de copiar cada arquivo por cima do local de destino_
-> _`-v` Mostra o nome de cada arquivo copiado._
+> _Opções do comando `cp`:_
+> - _`-d` Preserva os links ao copiar os arquivos_
+> - _`-p` Preserva todas as informações dos atributos dos arquivos, como dono do arquivo, grupo, permissões e data_
+> - _`-R` Copia os arquivos recursivamente. Útil para copiar os arquivos e diretórios abaixo do diretório especificado_
+> - _`-a` Faz o mesmo que as opções “-dpR” combinadas_
+> - _`-f` Força a cópia gravando por cima do destino_
+> - _`-i` Pergunta ao usuário antes de copiar cada arquivo por cima do local de destino_
+> - _`-v` Mostra o nome de cada arquivo copiado._
 
 ---
 
