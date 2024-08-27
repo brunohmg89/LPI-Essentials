@@ -109,7 +109,8 @@
 :white_check_mark:<br>
 ![E](img/image-4.png)
 
-> _Comando `free` no Linux mostra a quantidade de memória total, em uso e disponível, bem como informações de cachê e swap._<br>
+> _Comando `free` no Linux mostra a quantidade de memória total, em uso e disponível, bem como informações de cachê e swap._
+
 > _Opções do comando `free`:_
 > - _`-b` mostra a quantidade de memória em Bytes_
 > - _`-k` mostra a quantidade de memória em Kbtes_
@@ -128,6 +129,9 @@
 :black_large_square: Ele imediatamente emite todas as novas mensagens escritas no diário do sistema.
 
 :white_check_mark: Ele pode não exibir informações mais antigas porque foram substituídas por informações mais recentes.
+
+> _Nos sistemas operacionais Linux, o comando `dmesg` examina ou controla o buffer de anel do kernel._
+> _O buffer de anel do kernel é uma estrutura de dados que registra mensagens relacionadas à operação do kernel . Um buffer de anel é um tipo especial de buffer que sempre possui um tamanho constante, removendo as mensagens mais antigas quando novas mensagens são recebidas._
 
 ---
 
