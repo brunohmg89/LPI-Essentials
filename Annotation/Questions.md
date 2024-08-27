@@ -130,7 +130,7 @@
 
 :white_check_mark: Ele pode não exibir informações mais antigas porque foram substituídas por informações mais recentes.
 
-> _Nos sistemas operacionais Linux, o comando `dmesg` examina ou controla o buffer de anel do kernel._
+> _Nos sistemas operacionais Linux, o comando `dmesg` examina ou controla o buffer de anel do kernel._<br>
 _O buffer de anel do kernel é uma estrutura de dados que registra mensagens relacionadas à operação do kernel . Um buffer de anel é um tipo especial de buffer que sempre possui um tamanho constante, removendo as mensagens mais antigas quando novas mensagens são recebidas._
 
 ---
