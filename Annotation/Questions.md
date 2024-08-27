@@ -109,7 +109,8 @@
 :white_check_mark:<br>
 ![E](img/image-4.png)
 
-> _Comando `free` no Linux mostra a quantidade de memória total, em uso e disponível, bem como informações de cachê e swap._<br><br>
+> _Comando `free` no Linux mostra a quantidade de memória total, em uso e disponível, bem como informações de cachê e swap._
+<br>
 > _Opções do comando `free`:_
 > - _`-b` mostra a quantidade de memória em Bytes_
 > - _`-k` mostra a quantidade de memória em Kbtes_
