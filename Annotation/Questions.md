@@ -500,7 +500,7 @@ _Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que exi
 
 :black_large_square: Este comando retornará um erro.
 
-> _O comando `tar` no Linux serve para criar arquivamentos de arquivos no Linux. Estes arquivamentos vêm do tempo que se usava fitas de backup para criar cópias de segurança de dados._
+> _O comando `tar` no Linux serve para criar arquivamentos de arquivos no Linux. Estes arquivamentos vêm do tempo que se usava fitas de backup para criar cópias de segurança de dados._<br>
 > _Opções do comando `tar`:
 > - _`-c` Cria um novo arquivo .tar_
 > - _`-u` Adiciona mais arquivos ao arquivo .tar somente se estes forem novos ou modificados_
@@ -544,15 +544,15 @@ _Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que exi
 
 :black_large_square: find -symlink /home/user
 
-> _O comando `find` pesquisa arquivos em uma hierarquia de diretórios._
->   - _`-type tipo` procura arquivos de um determinado tipo. São tipos possíveis:_
->       - _`b` blocos especiais (buffer)_
->       - _`c` caracteres especiais_
->       - _`d` diretórios_
->       - _`p` conector definido (FIFO)_
->       - _`f` arquivo regular_
->       - _`l` ligação simbólica_
->       - _`s` socket_
+> _O comando `find` pesquisa arquivos em uma hierarquia de diretórios._<br>
+> _`-type tipo` procura arquivos de um determinado tipo. São tipos possíveis:_
+> - _`b` blocos especiais (buffer)_
+> - _`c` caracteres especiais_
+> - _`d` diretórios_
+> - _`p` conector definido (FIFO)_
+> - _`f` arquivo regular_
+> - _`l` ligação simbólica_
+> - _`s` socket_
 
 ---
 
