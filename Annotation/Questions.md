@@ -165,7 +165,7 @@
 
 :black_large_square: -rwxrw---x
 
-:white_check_mark: -rw-rr-x--
+:white_check_mark: -rw-r-xr--
 
 > _O modo octal recebe este nome, pois utilizamos oito números, de 0 à 7, cada um desses números correspondem a uma letra, ou a um conjunto de letras, no modo simbólico:_
 >   - _1 → Representa a opção de execução (x) no modo simbólico_
@@ -289,7 +289,7 @@ _Outra vantagem da distribuições é seu custo. Um usuário experiente pode cop
 
 :black_large_square: BadBlue, IIS, iPlanet
 
-:white_check_mark: Apache, Nginx e, lighttpd.
+:white_check_mark: Apache, Nginx e lighttpd.
 
 ---
 
@@ -422,7 +422,7 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 29. O comando `cp` é utilizado para copiar arquivos. Suas opções principais são (Escolha três):
 
-:white_check_mark: `-r` Copia recursivamente o conteúdo do diretório de origem.
+:white_check_mark: `-R` Copia recursivamente o conteúdo do diretório de origem.
 
 :black_large_square: `-H` não copia nada, apenas mostra uma ajuda para o comando.
 
@@ -433,6 +433,14 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 :white_check_mark: `-i` modo interativo. Pergunta antes de sobrescrever um arquivo.
 
 :black_large_square: `-X` copia os arquivos removendo os atributos de execução.
+
+> _`-d` Preserva os links ao copiar os arquivos_
+> _`-p` Preserva todas as informações dos atributos dos arquivos, como dono do arquivo, grupo, permissões e data_
+> _`-R` Copia os arquivos recursivamente. Útil para copiar os arquivos e diretórios abaixo do diretório especificado_
+> _`-a` Faz o mesmo que as opções “-dpR” combinadas_
+> _`-f` Força a cópia gravando por cima do destino_
+> _`-i` Pergunta ao usuário antes de copiar cada arquivo por cima do local de destino_
+> _`-v` Mostra o nome de cada arquivo copiado._
 
 ---
 
@@ -447,6 +455,8 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 :black_large_square: ls -rename
 
 :black_large_square: move
+
+> _O comando `mv` no Linux move ou renomeia arquivos e diretórios. Ele não altera os atributos dos arquivos ou diretórios movidos se a transferência for o mesmo sistema de arquivos. Se o destino para onde os arquivos ou diretórios forem movidos não existir, o comando renomeia a origem, senão os dados são gravados por cima._
 
 ---
 
@@ -476,6 +486,20 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 :black_large_square: Este comando retornará um erro.
 
+> _O comando `tar` no Linux serve para criar arquivamentos de arquivos no Linux. Estes arquivamentos vêm do tempo que se usava fitas de backup para criar cópias de segurança de dados._
+> _Opções do comando `tar`:
+> - _`-c` Cria um novo arquivo .tar_
+> - _`-u` Adiciona mais arquivos ao arquivo .tar somente se estes forem novos ou modificados_
+> - _`-r` Adiciona os arquivos especificados no final do arquivo .tar_
+> - _`-g` Cria um backup incremental_
+> - _`-t` Lista o conteúdo de um arquivo .tar_
+> - _`-x` Extrai os arquivos de arquivo .tar_
+> - _`-j` Utiliza o bzip2 para compactar e descompactar os arquivos .tar.bz2_
+> - _`-J` Utiliza o xz para compactar e descompactar os arquivos .tar.xz_
+> - _`-z` Utiliza o gzip para compactar e descompactar os arquivos .tar.gz_
+> - _`-v` Lista todos os arquivos processados_
+> - _`-f` Indica que o destino é um arquivo em disco, e não uma unidade de fita magnética_
+
 ---
 
 33. Das seguintes opções de comandos, qual a que irá compactar a pasta `/home` solicitando uma senha necessária para a sua descompactação?
@@ -490,9 +514,11 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 :black_large_square: compress -encrypt homes.cpr /home
 
+> _O comando `zip` é utilizado para compactar arquivos e o comando `unzip` para descompactar_
+
 ---
 
-34. Qual a sintaxe correta do comando find para que eu possa encontrar links simbólicos dentro da pasta `/home/user`?
+34. Qual a sintaxe correta do comando `find` para que eu possa encontrar links simbólicos dentro da pasta `/home/user`?
 
 :black_large_square: find -type l /home/user
 
@@ -528,6 +554,10 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 :black_large_square: locate -ctime -1 /home/user
 
+> _O comando `xargs` no Linux executa o comando ou programa e passa como argumento para esse comando o que foi recebido como entrada padrão._
+> _Ele resolve o problema de pegar a saída padrão de um programa e usá-la como argumentos ou parâmetros para um comando ou programa_
+> _O comando `find /home/user -ctime -1` irá listar todos os arquivos criados nas últimas 24 horas, porém sem as informações que foram solicitadas no enunciado, com o comando `| xargs ls -lah` xargs se tornará os arquivos junto com o restante do `ls` trazendo todas as informações de criação dos arquivos_
+
 ---
 
 36. Se desejo saber qual o modelo da CPU usada em meu computador, qual opção me dará essa resposta?
@@ -542,6 +572,10 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 :white_check_mark: cat /proc/cpuinfo | grep "model name" | uniq
 
+> _As informações de CPU estão contidas no arquivo `/proc/cpuinfo`._
+> _No comando acima é realizado o comando `grep "model name"` que seria para mostrar somentes linhas que possuem essas palavras e depois utilizado o comando `uniq` que seria para remover as informações duplicadas_
+> _O comando `uniq` remove as linhas duplicadas de um arquivo ordenado. Por isso ele é muito usado em conjunto com o comando sort._
+
 ---
 
 37. Uma linha do arquivo `/etc/passwd` é a seguinte `games:x:5:60:games:/usr/games:/usr/sbin/nologin`. Como posso extrair, desse arquivo, apenas as informações relativas ao nome do usuário e sua pasta de trabalho?
@@ -555,6 +589,13 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 :black_large_square: awk -f ":" [1,6] /etc/passwd
 
 :black_large_square: sed /etc/passwd -d":"[1,6]
+
+> _O comando `cut` no Linux traduzido literalmente significa cortar. Ele lê o conteúdo de um ou mais arquivos e tem como saída uma coluna vertical._
+> _Suas opções mais frequentes são:_
+> - _`-b número` Imprime uma lista vertical com o byte número (da esquerda para direita)_
+> - _`-c número` Imprime uma lista vertical com o caractere número (da esquerda para direita)_
+> - _`-d delimitador` Configura o delimitador que separa uma coluna da outra. O padrão é o Tab_
+> - _`-f número` Imprime a coluna número_
 
 ---
 
@@ -580,13 +621,13 @@ _A opção `-e` habilita interpretação dos códigos de escape após barra inve
 
 :black_large_square: É a linha a partir da qual todas as variáveis são declaradas
 
-:white_check_mark: #! indica qual será o interpretador dos comandos nas linhas seguintes.
+:white_check_mark: `#!` indica qual será o interpretador dos comandos nas linhas seguintes.
 
 :black_large_square: É a linha que indica que todos os comandos serão interpretados pela linguagem Perl.
 
 ---
 
-40. Qual é o resultado do comando `echo $`?
+40. Qual é o resultado do comando `echo $?`?
 
 :black_large_square: não é possível executar 'echo $?'
 
@@ -676,17 +717,24 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :black_large_square: info usb
 
+> _Este comando exibe informações sobre dispositivos USB (Universal Serial Bus)._
+> Algumas opções do comando:
+> - _`-v` (verbose) mostra informações detalhadas_
+> - _`-D device` exibe informações apenas do dispositivo especificado_
+> - _`-V` (version) exibe informações sobre o aplicativo_
+> - _`-h` ou `−−help` exibe informações sobre o comando_
+
 ---
 
-46. No Linux, todo dispositivo de armazenamento encontrado é identificado por um arquivo dentro do diretório /dev/. É correto dizer que:
+46. No Linux, todo dispositivo de armazenamento encontrado é identificado por um arquivo dentro do diretório `/dev/`. É correto dizer que:
 
-:black_large_square: Dispositivos não encontrados pelo sistema, por qualquer que seja o motivo, serão colocados no diretório /de/null.
+:black_large_square: Dispositivos não encontrados pelo sistema, por qualquer que seja o motivo, serão colocados no diretório `/dev/null`.
 
-:black_large_square: Os dispositivos de armazenamento não são encontrados automaticamente e devem ser incluídos no arquivo /dev/fstab para serem encontrados.
+:black_large_square: Os dispositivos de armazenamento não são encontrados automaticamente e devem ser incluídos no arquivo `/dev/fstab` para serem encontrados.
 
-:white_check_mark: Discos rígidos, mesmo os externos, são nomeados /dev/sda, /dev/sdb, /dev/sdc, etc, na ordem correspondente à que são identificados pelo sistema.
+:white_check_mark: Discos rígidos, mesmo os externos, são nomeados `/dev/sda`, `/dev/sdb`, `/dev/sdc`, etc, na ordem correspondente à que são identificados pelo sistema.
 
-:black_large_square: Apenas discos já instalados no momento em que o sistema é inicializado estarão em /dev. Os demais são encontrados em /opt.
+:black_large_square: Apenas discos já instalados no momento em que o sistema é inicializado estarão em `/dev`. Os demais são encontrados em `/opt`.
 
 ---
 
@@ -701,6 +749,8 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 :white_check_mark: top
 
 :black_large_square: fs
+
+> _O Comando top no Linux é uma forma interessante de ver os processos em execução no Linux, com atualização de tela e ordenado pelo processo que utilizam mais CPU, no TOPo da tela._
 
 ---
 
@@ -745,8 +795,10 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 :white_check_mark: netstat
 
 > _O Comando `ifconfig` no Linux cria e configura as interfaces de rede e seus parâmetros. Esta operação é geralmente feita durante o processo de carga do sistema. Se não for passado nenhum parâmetro, ele exibe as configurações das interfaces ativas._
+
 > _O Comando `route` no Linux manipula a tabela de roteamento IP do kernel. Seu principal uso é configurar rotas estáticas para hosts ou redes especificadas através de uma interface, após a mesma ter sido configurada com o programa `ip`._
-_Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
+> _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
+
 > _O Comando `netstat` no Linux faz parte do antigo pacote legado Net-Tools e exibe as conexões de rede, tabela de rotas, estatísticas das interfaces etc. Ele foi elegantemente substituído pelo comando `ss`._
 
 ---
@@ -757,7 +809,7 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :black_large_square: Ligo para o provedor de acesso à Internet e peço ajuda aos universitários.
 
-:white_check_mark: Verifico com um ping se o servidor DNS do Google (8.8.8.8) está ativo e configuro esse endereço em meu arquivo /etc/resolv.conf
+:white_check_mark: Verifico com um ping se o servidor DNS do Google (8.8.8.8) está ativo e configuro esse endereço em meu arquivo `/etc/resolv.conf`
 
 :black_large_square: Isso é impossível de acontecer pois máquinas Linux nunca estão desconectadas da internet.
 
@@ -791,24 +843,27 @@ _Se o `route` for utilizado sem nenhuma opção, exibe a tabela de rotas._
 
 :black_large_square: recentuser
 
-> _O comando `updatedb` atualiza banco de dados de nome de arquivos acessado com o comando `locate`._<br>
-> _O comando `lastlog` exibe informações referentes ao último login dos usuários. Caso nenhum argumento seja passado, o comando `lastlog` exibe todas as informações armazenadas no arquivo `/var/log/lastlog` de todos os usuários do sistema._<br>
-> _Em sistemas operacionais do tipo Unix, o comando `who` exibe usuários conectados ao sistema, porém a opção `-lastlog` não existe_<br>
+> _O comando `updatedb` atualiza banco de dados de nome de arquivos acessado com o comando `locate`._
+
+> _O comando `lastlog` exibe informações referentes ao último login dos usuários. Caso nenhum argumento seja passado, o comando `lastlog` exibe todas as informações armazenadas no arquivo `/var/log/lastlog` de todos os usuários do sistema._
+
+> _Em sistemas operacionais do tipo Unix, o comando `who` exibe usuários conectados ao sistema, porém a opção `-lastlog` não existe_
+
 > _O comando `whois` procura um objeto em um banco de dados WHOIS. O WHOIS é um protocolo de consulta e resposta amplamente usado para consultar bancos de dados que armazenam os usuários registrados de um recurso da Internet._
 
 ---
 
 54. O comando `useradd` é usado pelo usuário root para criar uma nova conta no sistema. Quais são as chaves corretas para esse comando? (Escolha duas)
 
-:black_large_square: -c segurança: especifica quais pastas o usuário pode acessar com privilégios de usuário root
+:black_large_square: `-c segurança` especifica quais pastas o usuário pode acessar com privilégios de usuário root
 
-:white_check_mark: -c comentário: comentário (geralmente o nome completo do usuário)
+:white_check_mark: `-c comentário` especifica um comentário (geralmente o nome completo do usuário)
 
-:white_check_mark: -s shell: Shell padrão para o usuário
+:white_check_mark: `-s shell` especifica um shell padrão para o usuário
 
-:black_large_square: -s segurança: especifica quais pastas o usuário pode acessar com privilégios de usuário root
+:black_large_square: `-s segurança` especifica quais pastas o usuário pode acessar com privilégios de usuário root
 
-:black_large_square: -i interativo: cria o novo usuário de forma interativa, fazendo perguntas para preencher os dados sobre o mesmo
+:black_large_square: `-i interativo` cria o novo usuário de forma interativa, fazendo perguntas para preencher os dados sobre o mesmo
 
 ---
 
