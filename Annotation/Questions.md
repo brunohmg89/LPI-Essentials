@@ -6,7 +6,7 @@
 
 1. Quais são as diferenças entre unidades de disco rígido e discos de SSD? (Escolha duas.)
 
-:white_check_mark: Os discos rígidos têm um motor e peças móveis, os discos de estado sólido não.
+:white_check_mark: Os discos rígidos têm um motor e peças móveis, os discos de estado sólido (SSD) não.
 
 :black_large_square: Os discos rígidos podem falhar devido a danos físicos, enquanto os discos de estado sólido não podem falhar.
 
@@ -14,7 +14,7 @@
 
 :black_large_square: `/dev/sda` é um dispositivo de disco rígido, enquanto `/dev/ssda` é um disco de estado sólido.
 
-:white_check_mark: Os discos de estado sólido fornecem acesso mais rápido aos dados armazenados do que os discos rígidos.
+:white_check_mark: Os discos de estado sólido (SSD) fornecem acesso mais rápido aos dados armazenados do que os discos rígidos.
 
 ---
 
@@ -112,7 +112,7 @@
 > _Comando `free` no Linux mostra a quantidade de memória total, em uso e disponível, bem como informações de cachê e swap._<br>
 > _Opções do comando `free`:_
 > - _`-b` mostra a quantidade de memória em Bytes_
-> - _`-k` mostra a quantidade de memória em Kbtes_
+> - _`-k` mostra a quantidade de memória em Kbytes_
 > - _`-m` mostra a quantidade de memória em Megabytes_
 
 ---
@@ -215,7 +215,7 @@ _A permissão especial `t`, pode ser especificada somente no campo outros usuár
 
 ---
 
-14. Qual comando adiciona o novo usuário tux e cria o diretório home do usuário com arquivos de configuração padrão?
+14. Qual comando adiciona o novo usuário "tux" e cria o diretório home do usuário com arquivos de configuração padrão?
 
 :black_large_square: defaultuser tux
 
@@ -227,7 +227,13 @@ _A permissão especial `t`, pode ser especificada somente no campo outros usuár
 
 :black_large_square: passwd -a tux
 
-> _`-m` cria o diretório home fornecido na opção “-d” com os arquivos e estrutura definidos na configuração de /etc/skel;_
+> _O comando `useradd` no Linux cria contas de usuário no sistema. Seu único parâmetro obrigatório é o login do usuário._<br>
+_Opções do comando `useradd`:_
+> - _`-m` cria o diretório home fornecido na opção “-d” com os arquivos e estruturas definidos na configuração de /etc/skel;_
+> - _`-c "nome do usuário"` Esta opção grava no arquivo `/etc/passwd` o nome do proprietário da conta ou qualquer outra observação e comentário importantes. É um campo alfanumérico e deve estar compreendido entre aspas duplas_
+> - _`-d diretório_home` Esta opção fornece o caminho completo do diretório home do usuário_
+> - _`-g número_do_grupo` Esta opção fornece o grupo padrão da conta do usuário_
+> - _`-s shell` Esta opção deve fornecer o caminho completo do shell utilizado pela conta. Por exemplo `/bin/bash`, `/bin/tcsh`, `/bin/false` etc.
 
 ---
 
@@ -492,16 +498,16 @@ _Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que exi
 
 :black_large_square: em "cvf", a chave "v" instrui o comando tar a verificar a chave MD5 de cada arquivo que está sendo extraído.
 
-:white_check_mark: Como resultado da execução desse comando, todo o conteúdo da pasta /etc será agrupado em um arquivo chamado etc.tar
+:white_check_mark: Como resultado da execução desse comando, todo o conteúdo da pasta `/etc` será agrupado em um arquivo chamado etc.tar
 
-:black_large_square: Como resultado da execução desse comando, os arquivos contidos em etc.tar serão extraídos para a pasta /etc.
+:black_large_square: Como resultado da execução desse comando, os arquivos contidos em etc.tar serão extraídos para a pasta `/etc`.
 
-:white_check_mark: em "cvf", a chave "v" (verbose) instrui o comando tar a exibir o nome de cada um dos arquivos que está anexando ao arquivo etc.tar.
+:white_check_mark: em "cvf", a opção `v` (verbose) instrui o comando tar a exibir o nome de cada um dos arquivos que está anexando ao arquivo etc.tar.
 
 :black_large_square: Este comando retornará um erro.
 
 > _O comando `tar` no Linux serve para criar arquivamentos de arquivos no Linux. Estes arquivamentos vêm do tempo que se usava fitas de backup para criar cópias de segurança de dados._<br>
-> _Opções do comando `tar`:
+> _Opções do comando `tar`:_
 > - _`-c` Cria um novo arquivo .tar_
 > - _`-u` Adiciona mais arquivos ao arquivo .tar somente se estes forem novos ou modificados_
 > - _`-r` Adiciona os arquivos especificados no final do arquivo .tar_
@@ -568,9 +574,9 @@ _Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que exi
 
 :black_large_square: locate -ctime -1 /home/user
 
-> _O comando `xargs` no Linux executa o comando ou programa e passa como argumento para esse comando o que foi recebido como entrada padrão._
-> _Ele resolve o problema de pegar a saída padrão de um programa e usá-la como argumentos ou parâmetros para um comando ou programa_
-> _O comando `find /home/user -ctime -1` irá listar todos os arquivos criados nas últimas 24 horas, porém sem as informações que foram solicitadas no enunciado, com o comando `| xargs ls -lah` xargs se tornará os arquivos junto com o restante do `ls` trazendo todas as informações de criação dos arquivos_
+> _O comando `xargs` no Linux executa o comando ou programa e passa como argumento para esse comando o que foi recebido como entrada padrão._<br>
+_Ele resolve o problema de pegar a saída padrão de um programa e usá-la como argumentos ou parâmetros para um comando ou programa._
+> _O comando `find /home/user -ctime -1` irá listar todos os arquivos criados nas últimas 24 horas, porém sem as informações que foram solicitadas no enunciado, com o comando `| xargs ls -lah` xargs se tornará os arquivos junto com o restante do `ls` trazendo todas as informações de criação dos arquivos._
 
 ---
 
@@ -587,8 +593,8 @@ _Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que exi
 :white_check_mark: cat /proc/cpuinfo | grep "model name" | uniq
 
 > _As informações de CPU estão contidas no arquivo `/proc/cpuinfo`._
-> _No comando acima é realizado o comando `grep "model name"` que seria para mostrar somentes linhas que possuem essas palavras e depois utilizado o comando `uniq` que seria para remover as informações duplicadas_
-> _O comando `uniq` remove as linhas duplicadas de um arquivo ordenado. Por isso ele é muito usado em conjunto com o comando sort._
+> _No comando acima é realizado o comando `grep "model name"` que seria para mostrar somentes linhas que possuem essas palavras e depois utilizado o comando `uniq` que seria para remover as informações duplicadas._
+> _O comando `uniq` remove as linhas duplicadas de um arquivo ordenado. Por isso ele é muito usado em conjunto com o comando `sort`._
 
 ---
 
@@ -617,11 +623,11 @@ _Quando se aperta 2x a tecla `tab` o comando é completado com o arquivo que exi
 
 :white_check_mark: Ele concatena linhas de arquivos, na forma de colunas (uma linha de cada arquivo ao lado da outra, em sequencia), caso não seja usada nenhuma chave.
 
-:white_check_mark: Com a opção -s, o paste colocará as linhas dos arquivos uma abaixo da outra, em vez de ao lado.
+:white_check_mark: Com a opção `-s`, o comando `paste` colocará as linhas dos arquivos uma abaixo da outra, em vez de ao lado.
 
 :black_large_square: O comando paste desfaz o que o comando cut fez.
 
-:white_check_mark: O comando paste, usado com apenas um arquivo, funciona como o comando cat.
+:white_check_mark: O comando `paste`, usado com apenas um arquivo, funciona como o comando cat.
 
 :black_large_square: O comando paste pode ser usado apenas dentro de scripts, nunca na linha de comando.
 
@@ -672,7 +678,7 @@ _Convencionou-se que quando um comando é executado sem erros, ele retornará o 
 
 ---
 
-42. Supondo que eu tenha um script chamado meuscript.sh, qual o comando que o torna executável?
+42. Supondo que eu tenha um script chamado `meuscript.sh`, qual o comando que o torna executável?
 
 :black_large_square: chmod +x meuscript.sh
 
@@ -740,7 +746,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 ---
 
-46. No Linux, todo dispositivo de armazenamento encontrado é identificado por um arquivo dentro do diretório `/dev/`. É correto dizer que:
+46. No Linux, todo dispositivo de armazenamento encontrado é identificado por um arquivo dentro do diretório `/dev`. É correto dizer que:
 
 :black_large_square: Dispositivos não encontrados pelo sistema, por qualquer que seja o motivo, serão colocados no diretório `/dev/null`.
 
@@ -764,7 +770,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :black_large_square: fs
 
-> _O Comando top no Linux é uma forma interessante de ver os processos em execução no Linux, com atualização de tela e ordenado pelo processo que utilizam mais CPU, no TOPo da tela._
+> _O Comando `top` no Linux é uma forma interessante de ver os processos em execução no Linux, com atualização de tela e ordenado pelo processo que utilizam mais CPU, no TOPo da tela._
 
 ---
 
@@ -823,7 +829,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :black_large_square: Ligo para o provedor de acesso à Internet e peço ajuda aos universitários.
 
-:white_check_mark: Verifico com um ping se o servidor DNS do Google (8.8.8.8) está ativo e configuro esse endereço em meu arquivo `/etc/resolv.conf`
+:white_check_mark: Verifico com um comando `ping` se o servidor DNS do Google (8.8.8.8) está ativo e configuro esse endereço em meu arquivo `/etc/resolv.conf`
 
 :black_large_square: Isso é impossível de acontecer pois máquinas Linux nunca estão desconectadas da internet.
 
@@ -881,7 +887,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 ---
 
-55. O que significa o `x` no segundo campo do arquivo `/etc/passwd` (`root:x:0:0::/root:/bin/bash`)?
+55. O que significa o "x" no segundo campo do arquivo `/etc/passwd` (`root:x:0:0::/root:/bin/bash`) ?
 
 :black_large_square: O usuário tem direito a execução de qualquer programa disponível no sistema.
 
@@ -889,7 +895,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :black_large_square: O usuário tem as mesmas permissões do usuário root.
 
-:white_check_mark: Sua senha está criptografada no arquivo /etc/shadow
+:white_check_mark: Sua senha está criptografada no arquivo `/etc/shadow`.
 
 :black_large_square: O usuário não tem direito de acessar o sistema.
 
@@ -1003,6 +1009,8 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :black_large_square: dnsup
 
+> _O comando `traceroute` no Linux retorna os endereços das máquinas e outros dispositivos de rede por onde os pacotes passam para chegar a um determinado destino. Este caminho é conhecido como "rota de endereços"._
+
 > _O comando `route` mostra informações da tabela de roteamento._
 
 ---
@@ -1037,7 +1045,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :black_large_square: Seu ID de grupo primário deve ser 0 (zero)
  
-:black_large_square: Ele deve ser o primeiro em /etc/passwd
+:black_large_square: Ele deve ser o primeiro no arquivo `/etc/passwd`
 
 :white_check_mark: Seu ID de usuário é 0 (zero)
 
@@ -1045,21 +1053,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 ---
 
-67. Quais dos seguintes serviçoes são usados para sistemas de arquivos de rede? (Escolha dois)
-
-:white_check_mark: NFS
- 
-:black_large_square: rombox
-
-:black_large_square: openldap
-
-:black_large_square: python
-
-:white_check_mark: samba
-
----
-
-68. Qual comando pesquisa e lista arquivos PDF no diretório do usuário?
+67. Qual comando pesquisa e lista arquivos PDF no diretório do usuário?
 
 :black_large_square: search *.pdf
 
@@ -1067,11 +1061,11 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
  
 :white_check_mark: find /home/*.pdf
 
-:black_large_square: ls -name -R `*.pdf`
+:black_large_square: ls -name -R *.pdf
 
 ---
 
-69. Qual comando é usado para extrair arquivo.bz2?
+68. Qual comando é usado para extrair download.bz2?
 
 :black_large_square: uncompress download.bz2
 
@@ -1081,7 +1075,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
  
 :white_check_mark: bunzip2 download.bz2
 
-> _Para extrair um .bz2 sempre usamos o bunzip2. Se estivesse com .tar.bz2 seria o "tar xjf"._
+> _Para extrair um arquivo com extensão ".bz2" sempre usamos o `bunzip2`. Se estivesse com .tar.bz2 seria o "tar xjf"._
 
 ---
 
@@ -1119,7 +1113,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 :white_check_mark: id
 
-> _O comando `id` Este comando informa o UID, o GID e os grupos de um determinado usuário._
+> _O comando `id`. Este comando informa o UID, o GID e os grupos de um determinado usuário._
 
 ---
 
@@ -1137,7 +1131,7 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 
 ---
 
-74. Qual cadeia de comando contará o número de arquivos regulares com o nome foo.txt em /home?
+74. Qual cadeia de comando contará o número de arquivos regulares com o nome "foo.txt" em `/home`?
 
 :white_check_mark: find /home -type f -name foot.txt | wc -l
  
@@ -1146,6 +1140,8 @@ Aprendizado. Usuários interessados no funcionamento do sistema operacional ou e
 :black_large_square: grep -R foot.txt | ls -l /home
 
 :black_large_square: ls -l /home | grep foo.txt
+
+> _O comando `find` com a opção `-f` pesquisa arquivos regulares no Linux somado ao comando `wc` que conta arquivos ou linhas_
 
 ---
 
