@@ -14,7 +14,18 @@
 
 - Licenças: Definem os direitos e responsabilidades do uso de ferramentas
     - GPL v2 e v3
+        - A licença de código aberto mais tradicional é a GPL: GNU General Public License. Como o nome implica, essa licença está diretamente relacionada ao projeto GNU, mas pode ser utilizada por qualquer projeto de código aberto. A GPL gira em torno de quatro liberdades principais:
+            - A liberdade de utilizar o programa para qualquer fim.
+            - A liberdade de modificar o programa para atender suas necessidades.
+            - A liberdade de compartilhar o programa com amigos e vizinhos.
+            - A liberdade de compartilhar as modificações realizadas.
     - BSD
+        - A Licença BSD, também conhecida como Licença de Distribuição de Software Berkeley, é um tipo de licença de código aberto que permite a livre utilização, modificação e distribuição de software.
+            - O software pode ser utilizado para qualquer fim, incluindo o uso comercial.
+            - O software pode ser modificado e distribuído sem qualquer restrição.
+            - O código fonte deve ser incluído em qualquer distribuição do software.
+            - Uma cópia da licença deve ser incluída em qualquer distribuição do software.
+            - Uma exoneração de responsabilidade deve ser incluída em qualquer distribuição do software.
     - Apache
     - MIT
     - Creative Commons
