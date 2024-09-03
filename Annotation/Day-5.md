@@ -131,7 +131,7 @@
 
 --- 
 
-2. Quais atributos sao usados impedir qualquer alteração e remoção de arquivos, mesmo pelo usuário root?
+2. Quais atributos sao usados para impedir qualquer alteração e remoção de arquivos, mesmo pelo usuário root?
 
 :black_large_square: Nenhum, o root possui acesso irretrito a arquivos e diretórios
 
@@ -191,7 +191,7 @@
 
 ---
 
-7. Que atalho do comando top permite exibir a linha de comando completa dos processos em execução/
+7. Que atalho do comando `top` permite exibir a linha de comando completa dos processos em execução/
 
 :white_check_mark: c
 

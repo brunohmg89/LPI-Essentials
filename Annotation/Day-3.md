@@ -31,7 +31,7 @@
         - `ls -R` opção `-R` lista de forma recursiva os arquivos e arquivos dentro de outros diretórios
     - Usos do comandos `cd`
         - `cd` para entrar em diretórios
-        - `cd /home/USUARIO` - `cd` comando para mudar de diretório
+        - `cd /home/USUARIO` comando para mudar de diretório
         - `cd` somente comando `cd` ele entra no diretório do usuário que está logado
         - `cd -` colocando um `-` ele entra o último diretório acessado
         - `cd ~` como explicado o `~` simboliza o diretório home do usuário, então junto com o comando "cd" ele entra no diretório home do usuário.
@@ -125,11 +125,11 @@
 
 ---
 
-5. O comando 'rm -rf / data/arquivo.txt' é considerado um comando perigoso?
+5. O comando `rm -rf / data/arquivo.txt` é considerado um comando perigoso?
 
-:black_large_square: O comando ignorarará / e removerá apenas o arquivo.txt
+:black_large_square: O comando ignorarará `/` e removerá apenas o arquivo.txt
 
-:white_check_mark: Sim, pois acidentalmente o usuário digitou um espaço entre o / e data, fazendo o rm -rf interpretar o argumento como 2 parametros (apagando o sistema de arquivos raíz). Felizmente distribuções novas pedem confirmação --no-preserve-root!
+:white_check_mark: Sim, pois acidentalmente o usuário digitou um espaço entre o `/` e `data/arquivo.txt`, fazendo o `rm -rf` interpretar o argumento como 2 parametros (apagando o sistema de arquivos raíz). Felizmente distribuções novas pedem confirmação `--no-preserve-root`
 
 :white_check_mark: Sim, e vai apagar tudo em distribuições mais antigas que 2005
 
