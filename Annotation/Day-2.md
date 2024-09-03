@@ -33,7 +33,7 @@
             - `drwxrwxrwx` - arquivos com `d` no inicio são diretórios
             - `lrwxrwxrwx` - arquivos com `l` no inicio são links/atalhos para outros arquivos
             - `brwxrwxrwx` - arquivos com `b` no inicio são arquivos de bloco, discos em geral como HDs e pendrives
-            - `crwxrwxrwx` - arquivos com `b` no inicio são arquivos de caractere que trafegam informação como terminal(tty)
+            - `crwxrwxrwx` - arquivos com `c` no inicio são arquivos de caractere que trafegam informação como terminal(tty)
     - ETC: `/etc` Arquivos de configuração globais.
         - `/etc/opt` Arquivos de configuração para aplicativos em /opt
         - `/etc/X11` Arquivos de configuração para o X Window System 11
@@ -59,7 +59,7 @@
         - `/usr/src` Armazenamento de código fonte da máquina
         - `/usr/X11R6` X Window Sysem, versão 11R6
         - `/usr/local` Armazenamento de binários não distribuidos na instalação principal da máquina, ou seja, fora do sistema de empacotamento. Também é o local de armazenamento terciário de dados.
-    - VAR: `/var` Arquivos que são gravados comf requencia (logs, páginas web, email, imagens, etc).
+    - VAR: `/var` Arquivos que são gravados com frequência (logs, páginas web, email, imagens, etc).
         - `/var/lock` Arquivos de lock, usados para controlar corretamente os recursos em uso
         - `/var/log` Arquivos de log, usado para logs em geral
         - `/var/mail` Caixas de e-mail dos usuários do sistema em formato mailbox
@@ -108,7 +108,7 @@
 
 ---
 
-4. Qual é o único usuário que não possui o seu diretório "home" no /home?
+4. Qual é o único usuário que não possui o seu diretório "home" no `/home`?
 
     :black_large_square: jeferson
 
@@ -140,9 +140,9 @@
 
     :black_large_square: /bin
 
-    :white_check_mark: /boot/
+    :white_check_mark: /boot
 
-    :black_large_square: /dev/
+    :black_large_square: /dev
 
     :black_large_square: /etc
 
@@ -156,6 +156,6 @@
 
     :white_check_mark: Pendrive
 
-    :white_check_mark:Disco Externo
+    :white_check_mark: Disco Externo
 
     :black_large_square: Terminal
